@@ -3,121 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover cool facts and the secret code at the end of the page." />
-  <meta name="keywords" content="AI code, secret code, cool website, learn AI" />
-  <meta name="author" content="Malik Talha Imran" />
-  <title>Discover the Code</title>
+  <title>Malik's Website</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f7f7;
+      background: #f4f4f4;
       color: #333;
-      line-height: 1.6;
+      scroll-behavior: smooth;
     }
-
-    .loader {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .loader::after {
-      content: '';
-      width: 50px;
-      height: 50px;
-      border: 5px solid #3498db;
-      border-top: 5px solid transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
     header {
-      background-color: #3498db;
+      background: #0077cc;
+      color: #fff;
       padding: 20px;
-      color: white;
       text-align: center;
-      border-radius: 0 0 20px 20px;
     }
-
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
     img {
       width: 100%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
+      margin: 30px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
-    .code-box {
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 1em;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .hidden-code {
       background: #222;
       color: #0f0;
-      font-weight: bold;
-      font-size: 24px;
-      padding: 20px;
-      margin-top: 40px;
-      border-radius: 10px;
-      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-family: monospace;
+      border-radius: 8px;
+      display: none;
     }
-
-    @media (max-width: 600px) {
-      .code-box {
-        font-size: 20px;
-      }
-
-      header {
-        font-size: 20px;
-      }
+    footer {
+      text-align: center;
+      background: #ddd;
+      padding: 20px;
+      margin-top: 50px;
     }
   </style>
-  <script>
-    window.addEventListener('load', () => {
-      document.querySelector('.loader').style.display = 'none';
-    });
-  </script>
 </head>
 <body>
-  <div class="loader"></div>
 
   <header>
-    <h1>🔍 Discover the Secret AI Code</h1>
-    <p>Explore this page and scroll to the bottom to reveal your unique code.</p>
+    <h1>👋 Welcome to Malik's Website</h1>
+    <p>This site is built for giveaways, AI experiments, or just fun!</p>
   </header>
 
-  <div class="container">
-    <p>Welcome! This is a simple and responsive website that includes visuals and a hidden code revealed at the end. This could be used for giveaways, AI experiments, or just fun.</p>
+  <section>
+    <h2>🔧 Tech World</h2>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Tech Image" />
+    <p>Explore the evolving world of technology, from artificial intelligence to futuristic gadgets and beyond.</p>
 
-    <img src="https://source.unsplash.com/600x400/?technology,ai" alt="Tech Image" />
-    <img src="https://source.unsplash.com/600x400/?code,computer" alt="Coding Image" />
+    <h2>💻 Behind the Code</h2>
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8e97c9ab2d?auto=format&fit=crop&w=900&q=80" alt="Coding Image" />
+    <p>Code is the backbone of innovation. From basic HTML to advanced machine learning, it's all here.</p>
 
-    <p>Scroll down slowly and enjoy the images. The code you’re looking for is just a little further down.</p>
+    <h2>🎨 Creative Art</h2>
+    <img src="https://images.unsplash.com/photo-1603899122780-0f4b0e556b03?auto=format&fit=crop&w=900&q=80" alt="Abstract Art" />
+    <p>Design and imagination meet to create amazing visuals and inspiring digital art.</p>
 
-    <img src="https://source.unsplash.com/600x400/?abstract,cyber" alt="Abstract Image" />
+    <h2>🌌 Space Wonders</h2>
+    <img src="https://images.unsplash.com/photo-1587574293340-ec497c5b4f93?auto=format&fit=crop&w=900&q=80" alt="Space Image" />
+    <p>Look into the stars and imagine the future of humans in space, AI robots on Mars, and more.</p>
 
-    <div class="code-box">
-      Your Secret Code: <span>AI9067</span>
+    <h2>📸 Visual Storytelling</h2>
+    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=900&q=80" alt="Photography" />
+    <p>Every image tells a story. Explore moments captured from all over the world through powerful visuals.</p>
+
+    <h2>🕵️ Secret Giveaway Code</h2>
+    <button onclick="document.getElementById('codeBox').style.display='block'">Reveal the Code</button>
+    <div class="hidden-code" id="codeBox">
+      🎁 Secret Code: <strong>AI-MK2025</strong>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Malik Talha Imran. All rights reserved.
+  </footer>
+
 </body>
 </html>
