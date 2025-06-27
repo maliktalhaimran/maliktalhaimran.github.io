@@ -2,120 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI World – Explore the Future with Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover cool facts and the secret code at the end of the page." />
+  <meta name="keywords" content="AI code, secret code, cool website, learn AI" />
+  <meta name="author" content="Malik Talha Imran" />
+  <title>Discover the Code</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7f7;
       color: #333;
+      line-height: 1.6;
     }
-    header {
-      background-color: #1f1f1f;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
+
+    .loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
     }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
+
+    .loader::after {
+      content: '';
+      width: 50px;
+      height: 50px;
+      border: 5px solid #3498db;
+      border-top: 5px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
     }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     .container {
-      padding: 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 20px;
     }
-    .section {
-      margin-bottom: 40px;
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    .section img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-    .footer {
+
+    header {
+      background-color: #3498db;
+      padding: 20px;
+      color: white;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 20px;
-      background-color: #e0e0e0;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      border-top: 2px solid #ccc;
+      border-radius: 0 0 20px 20px;
     }
-    .highlight-code {
-      color: #d60000;
-      font-size: 28px;
-      font-weight: bold;
-      background-color: #fff;
-      padding: 12px 24px;
-      display: inline-block;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
     }
-    h2 {
-      color: #222;
+
+    .code-box {
+      background: #222;
+      color: #0f0;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .code-box {
+        font-size: 20px;
+      }
+
+      header {
+        font-size: 20px;
+      }
     }
   </style>
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('.loader').style.display = 'none';
+    });
+  </script>
 </head>
 <body>
+  <div class="loader"></div>
 
-<header>
-  <h1>AI World</h1>
-  <p>Step into the Future – Powered by Artificial Intelligence</p>
-</header>
+  <header>
+    <h1>🔍 Discover the Secret AI Code</h1>
+    <p>Explore this page and scroll to the bottom to reveal your unique code.</p>
+  </header>
 
-<div class="container">
-  <div class="section">
-    <h2>Introduction to AI</h2>
-    <p>Artificial Intelligence (AI) is no longer a dream of the future—it's shaping our present. From personal assistants to smart security systems, AI is everywhere, quietly changing how we live, work, and think.</p>
-    <img src="https://images.unsplash.com/photo-1596079890741-40a7f8f72089?auto=format&fit=crop&w=1000&q=80" alt="AI Concept">
+  <div class="container">
+    <p>Welcome! This is a simple and responsive website that includes visuals and a hidden code revealed at the end. This could be used for giveaways, AI experiments, or just fun.</p>
+
+    <img src="https://source.unsplash.com/600x400/?technology,ai" alt="Tech Image" />
+    <img src="https://source.unsplash.com/600x400/?code,computer" alt="Coding Image" />
+
+    <p>Scroll down slowly and enjoy the images. The code you’re looking for is just a little further down.</p>
+
+    <img src="https://source.unsplash.com/600x400/?abstract,cyber" alt="Abstract Image" />
+
+    <div class="code-box">
+      Your Secret Code: <span>AI9067</span>
+    </div>
   </div>
-
-  <div class="section">
-    <h2>AI in Smart Living</h2>
-    <p>AI is enhancing our living spaces with voice-activated devices, automatic lighting, smart thermostats, and intelligent appliances. These systems learn your habits and create a comfortable, energy-efficient home environment.</p>
-    <img src="https://images.unsplash.com/photo-1581093588401-4b8b5d13f9e7?auto=format&fit=crop&w=1000&q=80" alt="Smart Living AI" />
-  </div>
-
-  <div class="section">
-    <h2>AI in Healthcare</h2>
-    <p>AI assists doctors in detecting diseases faster and more accurately. It helps hospitals manage records, predict patient needs, and even support robotic surgeries in real time.</p>
-    <img src="https://images.unsplash.com/photo-1588776814546-bbd2b8e4d61b?auto=format&fit=crop&w=1000&q=80" alt="AI in Healthcare">
-  </div>
-
-  <div class="section">
-    <h2>AI in Education</h2>
-    <p>AI is making learning more personal. It can adapt to a student’s pace, recommend learning paths, and translate languages instantly. Virtual classrooms and intelligent tutoring systems are becoming the new norm.</p>
-    <img src="https://images.unsplash.com/photo-1581090700227-1c2ca2cb2c92?auto=format&fit=crop&w=1000&q=80" alt="AI in Education">
-  </div>
-
-  <div class="section">
-    <h2>AI in Transportation</h2>
-    <p>From self-driving cars to smart traffic systems, AI is revolutionizing how we travel. These technologies aim to reduce accidents, save fuel, and provide efficient transport solutions.</p>
-    <img src="https://images.unsplash.com/photo-1581091012184-7e0cdfbb679e?auto=format&fit=crop&w=1000&q=80" alt="AI in Transportation">
-  </div>
-
-  <div class="section">
-    <h2>AI in Finance</h2>
-    <p>AI helps in fraud detection, automated trading, and personal finance management. It analyzes large sets of financial data to make accurate predictions and give tailored investment advice.</p>
-    <img src="https://images.unsplash.com/photo-1611979021739-6d3beafdb431?auto=format&fit=crop&w=1000&q=80" alt="AI in Finance">
-  </div>
-
-  <div class="section">
-    <h2>AI in Daily Life</h2>
-    <p>From Netflix suggestions to face recognition in smartphones, AI is everywhere. It helps businesses make decisions, supports customer service, and enhances user experience on websites and apps.</p>
-    <img src="https://images.unsplash.com/photo-1580894894510-5885cba09f88?auto=format&fit=crop&w=1000&q=80" alt="AI in Daily Life">
-  </div>
-</div>
-
-<div class="footer">
-  Your access code is: <span class="highlight-code">AI9067</span>
-</div>
-
 </body>
 </html>
